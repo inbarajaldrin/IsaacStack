@@ -1,0 +1,31 @@
+site_name: IsaacStack
+site_description: "Practical Isaac Sim and Isaac Lab code examples, extensions, and workflows."
+site_author: "Aldrin Inbaraj"
+site_url: https://isaacstack.github.io
+
+theme:
+  name: material
+  logo: assets/images/logo.png   # ← add this line
+  favicon: assets/images/logo.png  # optional, if you have one
+  palette:
+    scheme: light 
+    primary: green
+    accent: black
+  features:
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Assets: assets/index.md
+  - Snippets: snippets/index.md
+  - Extensions: extensions/index.md
+  - Tutorials: tutorials/index.md
+  - Contact: contact.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+
+extra_css:
+  - stylesheets/extra.css
