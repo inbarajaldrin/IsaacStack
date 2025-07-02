@@ -35,14 +35,14 @@ Browse and download simulation-ready assets.
 <div class="asset-grid">
 
 <div class="asset-card">
-  <img src="images/robotiq2f-85.jpg" alt="Robotiq Gripper Preview">
+  <img src="post2/robotiq2f-85.jpg" alt="Robotiq Gripper Preview">
   <a href="https://omniverse-content-production.s3.us-east-2.amazonaws.com/Assets/Isaac/4.5/Isaac/Robots/Grippers/StandardGripper/standard_gripper.usd" download>
     Download Robotiq Gripper
   </a>
 </div>
 
 <div class="asset-card">
-  <img src="images/rg2.jpg" alt="RG2 Preview">
+  <img src="post4/rg2.jpg" alt="RG2 Preview">
   <a href="https://omniverse-content-production.s3.us-east-2.amazonaws.com/Assets/Isaac/4.5/Isaac/Robots/UniversalRobots/ur5e/rg2.usd" download>
     Download RG2 Gripper
   </a>

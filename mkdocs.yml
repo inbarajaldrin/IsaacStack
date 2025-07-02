@@ -5,8 +5,8 @@ site_url: https://isaacstack.github.io
 
 theme:
   name: material
-  logo: assets/images/logo.png   # ← add this line
-  favicon: assets/images/logo.png  # optional, if you have one
+  logo: assets/misc/logo.png
+  favicon: assets/misc/logo.png
   palette:
     scheme: light 
     primary: green
@@ -16,10 +16,17 @@ theme:
 
 nav:
   - Home: index.md
+  - Blog:
+      - Blog Home: blog/index.md
+      - Getting Started with IsaacStack: blog/post1.md
+      - Rigging the Robotiq 2F-85 Gripper: tutorials/post2.md
+      - UR5e + Robotiq Extension: extensions/post3.md
   - Assets: assets/index.md
   - Snippets: snippets/index.md
-  - Extensions: extensions/index.md
-  - Tutorials: tutorials/index.md
+  - Extensions:
+      - UR5e + Robotiq Extension: extensions/post3.md
+  - Tutorials:
+      - Rigging the Robotiq 2F-85 Gripper: tutorials/post2.md
   - Contact: contact.md
 
 markdown_extensions:
