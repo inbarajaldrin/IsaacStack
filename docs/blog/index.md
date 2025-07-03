@@ -81,4 +81,13 @@ Welcome to the IsaacStack Blog — follow updates, tutorials, and insights here.
   <a href="post4/">Read More →</a>
 </div>
 
+<!-- Post 5 -->
+<div class="blog-card">
+  <img src="../assets/post5/ur5e-rg2.jpg" alt="UR5e RG2 Extension">
+  <h3>Extracting and Reusing Isaac Sim Assets</h3>
+  <p class="date">📅 July 2, 2025</p>
+  <p>Create an Isaac Sim extension that sets up the UR5e robot with a fully rigged OnRobot RG2 gripper.</p>
+  <a href="post5/">Read More →</a>
+</div>
+
 </div>

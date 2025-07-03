@@ -7,12 +7,22 @@ theme:
   name: material
   logo: assets/misc/logo.png
   favicon: assets/misc/logo.png
-  palette:
-    scheme: light 
-    primary: green
-    accent: black
+  palette:    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: light
+      primary: green
+      accent: black
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
   features:
     - content.code.copy
+    - toc.integrate
 
 nav:
   - Home: index.md
@@ -33,6 +43,17 @@ markdown_extensions:
   - toc:
       permalink: true
   - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+# extra_css: #for a line between page and content list of the page if "toc.integrate" is not used 
+#   - stylesheets/extra.css
 
-extra_css:
-  - stylesheets/extra.css
+plugins:
+  - search
+
+  

@@ -21,3 +21,19 @@ This site hosts:
 Read on to set up your local environment and begin using this site.
 
 ...
+
+<script src="https://giscus.app/client.js"
+        data-repo="inbarajaldrin/IsaacStack"
+        data-repo-id="R_kgDOPFcbDA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOPFcbDM4CsZb2"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
