@@ -32,7 +32,38 @@ nav:
       - Rigging the Robotiq 2F-85 Gripper: tutorials/post2.md
       - UR5e + Robotiq Extension: extensions/post3.md
   - Assets: assets/index.md
-  - Snippets: snippets/index.md
+  - Snippets:
+      - Scene:
+          - Setup Scene: snippets/scene/setup-scene.md
+          - Import USD: snippets/scene/import-usd.md
+          - Create : snippets/scene/create.md
+          - Delete Prim: snippets/scene/delete-prim.md
+          - Set Physics: snippets/scene/set-physics.md
+          - Play: snippets/sim/play.md
+          - Stop: snippets/sim/stop.md
+      - Robot Arm:
+          - Import Arm: snippets/robot-arm/import-arm.md
+          - Move Joints: snippets/robot-arm/move-joints.md
+          - IK Control: snippets/robot-arm/ik-control.md
+      - Gripper:
+          - Import Gripper: snippets/gripper/import-gripper.md
+          - Open/Close Gripper: snippets/gripper/open-close.md
+          - Connect Gripper to Arm: snippets/gripper/connect-arm.md
+      - Read Pose:
+          - Position: snippets/state/read-position.md
+          - Orientation: snippets/state/read-orientation.md
+
+      - Action Graph:
+          - Connect Nodes: snippets/action-graph/connect-nodes.md
+      - Extension UI:
+          - UI Textbox: snippets/extension-ui/ui-textbox.md
+          - UI Button: snippets/extension-ui/ui-button.md
+          - UI Checkbox: snippets/extension-ui/ui-checkbox.md
+          - UI Dropdown: snippets/extension-ui/ui-dropdown.md
+          - Display-only Textbox: snippets/extension-ui/ui-display-textbox.md
+      - Synthetic Data:
+          - Setup Replicator: snippets/replicator/setup-replicator.md
+
   - Extensions:
       - UR5e + Robotiq Extension: extensions/post3.md
   - Tutorials:
