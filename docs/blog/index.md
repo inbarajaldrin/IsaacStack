@@ -163,5 +163,13 @@ Welcome to the IsaacStack Blog — follow updates, tutorials, and insights here.
   <a href="../extensions/post12/">Read More →</a>
 </div>
 
+<!-- Post 14 -->
+<div class="blog-card">
+  <img src="../assets/post15/connect-grippers.jpg" alt="Connect Grippers to UR5e">
+  <h3>Connect Robotiq & RG2 Gripper to UR5e</h3>
+  <p class="date">July 6, 2025</p>
+  <p>Learn how to import, position, and attach both Robotiq 2F-85 and RG2 grippers to the UR5e arm in Isaac Sim.</p>
+  <a href="../tutorials/post15/">Read More →</a>
+</div>
 
 </div>

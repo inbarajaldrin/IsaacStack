@@ -46,7 +46,6 @@ nav:
           - IK Control: snippets/robot-arm/ik-control.md
       - Gripper:
           - Import Gripper: snippets/gripper/import-gripper.md
-          - Open/Close Gripper: snippets/gripper/open-close.md
           - Connect Gripper to Arm: snippets/gripper/connect-arm.md
       - Read Pose:
           - Position: snippets/state/read-position.md
