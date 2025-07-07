@@ -35,15 +35,14 @@ nav:
   - Snippets:
       - Scene:
           - Setup Scene: snippets/scene/setup-scene.md
-          - Import USD: snippets/scene/import-usd.md
+          - Import : snippets/scene/import-usd.md
           - Create : snippets/scene/create.md
           - Delete Prim: snippets/scene/delete-prim.md
           - Set Physics: snippets/scene/set-physics.md
-          - Play: snippets/sim/play.md
-          - Stop: snippets/sim/stop.md
+          - Timeline: snippets/scene/timeline.md
       - Robot Arm:
           - Import Arm: snippets/robot-arm/import-arm.md
-          - Move Joints: snippets/robot-arm/move-joints.md
+          - FK Control: snippets/robot-arm/fk-control.md
           - IK Control: snippets/robot-arm/ik-control.md
       - Gripper:
           - Import Gripper: snippets/gripper/import-gripper.md
