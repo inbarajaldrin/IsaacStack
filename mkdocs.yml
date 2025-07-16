@@ -50,9 +50,16 @@ nav:
       - Read Pose:
           - Position: snippets/state/read-position.md
           - Orientation: snippets/state/read-orientation.md
+      - Camera:
+          - Create: snippets/camera/create.md
+          - Import: snippets/camera/import.md
+          - Move: snippets/camera/move.md
+          - Publish: snippets/camera/publish.md
+          - Robotic Arm: snippets/camera/robotic-arm.md
 
       - Action Graph:
           - Connect Nodes: snippets/action-graph/connect-nodes.md
+          - Camera: snippets/action-graph/camera.md
       - Extension UI:
           - UI Textbox: snippets/extension-ui/ui-textbox.md
           - UI Button: snippets/extension-ui/ui-button.md
