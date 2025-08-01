@@ -36,7 +36,8 @@ nav:
       - Scene:
           - Setup Scene: snippets/scene/setup-scene.md
           - Import : snippets/scene/import-usd.md
-          - Create : snippets/scene/create.md
+          - Create : snippets/scene/create-prim.md
+          - Move Prim: snippets/scene/move-prim.md
           - Delete Prim: snippets/scene/delete-prim.md
           - Set Physics: snippets/scene/set-physics.md
           - Timeline: snippets/scene/timeline.md
@@ -47,9 +48,9 @@ nav:
       - Gripper:
           - Import Gripper: snippets/gripper/import-gripper.md
           - Connect Gripper to Arm: snippets/gripper/connect-arm.md
-      - Read Pose:
-          - Position: snippets/state/read-position.md
-          - Orientation: snippets/state/read-orientation.md
+      - Read USD Features:
+          - Transform: snippets/state/read-transform.md
+          - Contact: snippets/state/read-contact.md
       - Camera:
           - Create: snippets/camera/create.md
           - Import: snippets/camera/import.md
@@ -72,6 +73,8 @@ nav:
   - Extensions:
       - UR5e + Robotiq Extension: extensions/post3.md
   - Tutorials:
+      - Troubleshooting:
+          - Omniverse Nucleus: tutorials/troubleshooting.md
       - Rigging the Robotiq 2F-85 Gripper: tutorials/post2.md
   - Contact: contact.md
 

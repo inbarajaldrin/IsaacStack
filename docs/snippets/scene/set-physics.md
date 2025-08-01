@@ -75,3 +75,62 @@ else:
   </div>
 
 </div>
+
+## **Set Restitution to deal with bounciness of object**
+
+Youtube Tutorial:  [Omniverse Physics Extension - Kit104 - Part 9: Materials - Friction Restitution and Defaults ](https://youtu.be/tHOM-OCnBLE?si=Xxj7BmRoyHycmATc)
+
+```python
+from pxr import UsdPhysics, PhysxSchema, UsdShade
+import omni.usd
+
+stage = omni.usd.get_context().get_stage()
+
+# === Create Physics Material (Low Bounce for Jenga) ===
+mat_path = "/World/JengaPhysMat"
+mat_prim = UsdShade.Material.Define(stage, mat_path).GetPrim()
+
+# Apply physics material APIs
+UsdPhysics.MaterialAPI.Apply(mat_prim)
+PhysxSchema.PhysxMaterialAPI.Apply(mat_prim)
+
+# Set material properties for realistic wood behavior
+UsdPhysics.MaterialAPI(mat_prim).CreateRestitutionAttr().Set(0.1)      # Very low bounce
+UsdPhysics.MaterialAPI(mat_prim).CreateStaticFrictionAttr().Set(0.7)   # Good grip when stationary
+UsdPhysics.MaterialAPI(mat_prim).CreateDynamicFrictionAttr().Set(0.6)  # Sliding friction
+
+# PhysX-specific settings
+PhysxSchema.PhysxMaterialAPI(mat_prim).CreateRestitutionCombineModeAttr().Set(PhysxSchema.Tokens.min)  # Use minimum restitution
+PhysxSchema.PhysxMaterialAPI(mat_prim).CreateFrictionCombineModeAttr().Set(PhysxSchema.Tokens.average)
+
+# === Apply Material to Jenga Block ===
+cube_path = "/World/JengaBlock2"
+cube_prim = stage.GetPrimAtPath(cube_path)
+
+if cube_prim:
+    UsdShade.MaterialBindingAPI.Apply(cube_prim).Bind(UsdShade.Material(mat_prim))
+    print(f"Low-bounce physics material applied to {cube_path}")
+else:
+    print(f"Prim not found at {cube_path}")
+```
+        **Enabling restitution enables accurate pick and place sequence.**
+
+<div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
+
+  <div style="flex: 1; min-width: 300px;">
+    <p><strong>With no Restitution set</strong></p>
+    <video width="100%" controls>
+      <source src="../assets/without_restitution.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div style="flex: 1; min-width: 300px;">
+    <p><strong>With Restitution=0.7</strong></p>
+    <video width="100%" controls>
+      <source src="../assets/with_restitution.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</div>
