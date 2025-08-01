@@ -50,7 +50,7 @@ nav:
           - Connect Gripper to Arm: snippets/gripper/connect-arm.md
       - Read USD Features:
           - Transform: snippets/state/read-transform.md
-          - Contact: snippets/state/read-contact.md
+          - Collision: snippets/state/read-collision.md
       - Camera:
           - Create: snippets/camera/create.md
           - Import: snippets/camera/import.md
