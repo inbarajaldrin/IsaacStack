@@ -76,6 +76,7 @@ nav:
       - Troubleshooting:
           - Omniverse Nucleus: tutorials/troubleshooting.md
       - UR5e + RG2 Gripper Digital Twin Setup: tutorials/asu-ur5e-rg2-dt-setup.md
+      - Isaac Sim + ROS2 MCP setup: tutorials/isaac-sim-ros2-mcp-setup.md
       - Rigging the Robotiq 2F-85 Gripper: tutorials/post2.md
   - Contact: contact.md
 
