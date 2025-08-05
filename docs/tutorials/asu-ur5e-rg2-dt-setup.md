@@ -40,8 +40,6 @@ docker run --rm -it \
   --name ursim universalrobots/ursim_e-series
 ```
 
-> View URSim in browser: [http://localhost:6080](http://localhost:6080)
-
 ---
 
 ## Part 3: Bringup in ROS 2
@@ -66,7 +64,7 @@ ros2 launch ur_bringup ur5e.launch.py ur_type:=ur5e robot_ip:=192.168.1.111
 
 ### Repo
 
-[onrobot_ros (by karishmapatnaik)](https://github.com/karishmapatnaik/onrobot_ros)
+[https://github.com/karishmapatnaik/onrobot_ros](https://github.com/karishmapatnaik/onrobot_ros)
 
 ### Run Gripper Control Node
 
@@ -90,7 +88,7 @@ For vision-based pose localization:
 
 ### Repo
 
-[max_camera_localizer (by MaxlGao)](https://github.com/MaxlGao/max_camera_localizer)
+[https://github.com/MaxlGao/max_camera_localizer](https://github.com/MaxlGao/max_camera_localizer)
 
 ### Run Localizer
 
